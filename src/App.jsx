@@ -12,6 +12,9 @@ import Dropdown from './Dropdown'
 import Form from './Form'
 import Transition from './Transition'
 import UseMemoR from './UseMemoR'
+import Parent from './component/Parent'
+import { UserProvider } from './UserContext'
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -40,7 +43,15 @@ function App() {
     {/* <Dropdown/> */}
     {/* <Form/>
     <Transition/> */}
-    <UseMemoR/>
+    {/* <UseMemoR/> */}
+    <div style={{backgroundColor: "red" , padding:"20px"}}>
+      <h2>App Component</h2>
+      <UserProvider>
+        <Parent/>
+      </UserProvider>
+    </div>
+    
+   
     </>
   )
 }
