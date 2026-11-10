@@ -16,11 +16,18 @@ import Parent from './component/Parent'
 import { UserProvider } from './UserContext'
 import Form2 from './Form2'
 import UseIdK from './UseIdK'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import {Link, Outlet, RouterProvider , createBrowserRouter} from "react-router"
 
 
 function App() {
   // const [count, setCount] = useState(0)
-  const [name,setName] = useState("");
+  //const [name,setName] = useState("");
+  // const router = createBrowserRouter([
+  //   {path: "/Pages/Home" , element: <Home/>},
+  //   {path: "/Pages/Contact" , element: <Contact/>}
+  // ])
 
   return (
     <>
@@ -54,7 +61,19 @@ function App() {
     </div> */}
 
     {/* <Form2/> */}
-    <UseIdK/>
+    {/* <UseIdK/> */}
+    {/* <h1>React Router</h1>
+    <RouterProvider router={router}/> */}
+    <h1>Router Provider change in the main.jsx</h1>
+    <nav>
+        <Link to="/">Home</Link> | {"  "}
+        <Link to="/about">About</Link> | {"  "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <h1>This is App Component</h1>
+
+      <Outlet />
     
    
     </>
