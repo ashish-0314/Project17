@@ -14,6 +14,8 @@ import Transition from './Transition'
 import UseMemoR from './UseMemoR'
 import Parent from './component/Parent'
 import { UserProvider } from './UserContext'
+import Form2 from './Form2'
+import UseIdK from './UseIdK'
 
 
 function App() {
@@ -44,12 +46,15 @@ function App() {
     {/* <Form/>
     <Transition/> */}
     {/* <UseMemoR/> */}
-    <div style={{backgroundColor: "red" , padding:"20px"}}>
+    {/* <div style={{backgroundColor: "red" , padding:"20px"}}>
       <h2>App Component</h2>
       <UserProvider>
         <Parent/>
       </UserProvider>
-    </div>
+    </div> */}
+
+    {/* <Form2/> */}
+    <UseIdK/>
     
    
     </>
